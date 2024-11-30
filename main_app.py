@@ -84,7 +84,6 @@ def add_note():
        notes[note_name] = {'text': "", 'tags': []}
        list_notes.addItem(note_name)
        list_tags.addItems(notes[note_name]["tags"])
-
 def save_note():
     if list_notes.selectedItems():
         key = list_notes.selectedItems()[0].text()
